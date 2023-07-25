@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listar {{ model }}</title>
+</head>
+<body>
+
+<h1>Listar Departamentos</h1>
+
+{% for d in datos %}
+
+    Edificio: {{ d.edificio }}<br>
+    Costo: {{ d.costo }}<br>
+    Cuartos Número: {{ d.num_cuartos }}<br>
+    propietario_url: {{ d.propietario }}<br>
+    <hr>{% endfor %}
+
+</body>
+</html>
